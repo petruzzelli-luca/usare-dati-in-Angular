@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "esercitazione2_angular": {
+    "prova_alla_verifica": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -15,8 +15,7 @@
           "options": {
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js",
-              "@angular/localize/init"
+              "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -26,7 +25,6 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ]
           },
@@ -58,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "esercitazione2_angular:build:production"
+              "buildTarget": "prova_alla_verifica:build:production"
             },
             "development": {
-              "buildTarget": "esercitazione2_angular:build:development"
+              "buildTarget": "prova_alla_verifica:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,8 +72,7 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing",
-              "@angular/localize/init"
+              "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
