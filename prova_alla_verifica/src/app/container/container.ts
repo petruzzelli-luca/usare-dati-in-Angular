@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import { macchina } from '../macchina/macchina';
 
 @Component({
   selector: 'app-container',
-  imports: [],
+  imports: [macchina],
   templateUrl: './container.html',
   styleUrl: './container.css'
 })
-export class Container {
-  macchine=["ruspa", "autocarro", "gru", "scavatrice", "camion"]
+export class container {
+  names: string[];  
+  constructor() { 
+     this.names = ["gru", "autocarro", "ruspa", "carro"]; //Riempiamo il vettore
+  }
+  ngOnInit() {
+  }
 }
