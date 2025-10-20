@@ -12,6 +12,5 @@ export class container {
   constructor() { 
      this.names = ["gru", "autocarro", "ruspa", "carro"]; //Riempiamo il vettore
   }
-  ngOnInit() {
-  }
+ 
 }
