@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './macchina.html',
   styleUrl: './macchina.css'
 })
-export class macchina {
+export class Macchina {
   @Input() name!: string; // <-- Aggiungi la notazione @input
   componenti = ["ferro", "bulloni", "viti"]; 
   
